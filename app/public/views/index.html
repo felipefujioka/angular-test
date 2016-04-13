@@ -2,16 +2,17 @@
 <html lang="en" ng-app='application'>
 	<head>
 		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
-		<script src="/js/app.js"></script>
 		<script src="/js/fb-login.js"></script>
 		<script src="/js/fb-initSDK.js"></script>
+		<script src="/js/app.js"></script>
 	</head>
 	<body ng-controller='controller'>
 		<h1> Hi! {{ 'Felipe' + ' Jun' }} </h1>
+		<img ng-src="{{ picture.url }}"/>
 		<button ng-click="loadData()">Load Photos</button>
 		<ul>
 			<li ng-repeat="photo in photos">
-				<img ng-src="{{ photo.source }}">
+				<img ng-src="{{ photo.source }}"/>
 			</li>
 		</ul>
 		<fb:login-button scope="public_profile,email,user_photos" onlogin="checkLoginState();">

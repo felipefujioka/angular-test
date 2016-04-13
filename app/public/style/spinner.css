@@ -1,0 +1,34 @@
+@keyframes spinner {
+    to {transform: rotate(360deg);}
+}
+ 
+@-webkit-keyframes spinner {
+    to {-webkit-transform: rotate(360deg);}
+}
+ 
+.spinner {
+    min-width: 24px;
+    min-height: 24px;
+}
+ 
+.spinner:before {
+    content: 'Loading…';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+ 
+.spinner:not(:required):before {
+    content: '';
+    border-radius: 50%;
+    border-top: 2px solid #03ade0;
+    border-right: 2px solid transparent;
+    animation: spinner .6s linear infinite;
+    -webkit-animation: spinner .6s linear infinite;
+}
+
+  .spinner-demo{position:relative;float:left;width:50px;height:50px;margin:15px 15px 0 0;padding:10px;border:2px solid transparent;border-radius:5px;cursor:pointer}.spinner-demo:hover{border-color:#e6edf5;background:#fbfcfe}.spinner-demo.demo{background:#F6F8FA !important;border-color:#CED9E4 !important;cursor:default}.spinner-demo.demo > div{position:absolute;bottom:-15px;left:50%;width:30px;height:15px;margin-left:-15px;overflow:hidden}.spinner-demo.demo > div:after{content:'';position:absolute;left:50%;bottom:8px;width:20px;height:20px;margin-left:-12px;background:#F6F8FA;border:2px solid #CED9E4;-webkit-transform:rotate(45deg);transform:rotate(45deg)} .spinner-demo-code{display:none}.spinner-demo-code.active{display:block} @keyframes spinnerDemo1{to{transform:rotate(360deg)}}@-webkit-keyframes spinnerDemo1{to{-webkit-transform:rotate(360deg)}}.spinner-demo1{min-width:24px;min-height:24px}.spinner-demo1:before{content:'Loadingâ€¦';position:absolute;top:50%;left:50%;width:16px;height:16px;margin-top:-10px;margin-left:-10px}.spinner-demo1:not(:required):before{content:'';border-radius:50%;border:2px solid rgba(0,0,0,.3);border-top-color:rgba(0,0,0,.6);animation:spinnerDemo1 .6s linear infinite;-webkit-animation:spinnerDemo1 .6s linear infinite} @keyframes spinnerDemo2{to{transform:rotate(360deg)}}@-webkit-keyframes spinnerDemo2{to{-webkit-transform:rotate(360deg)}}.spinner-demo2{min-width:30px;min-height:30px}.spinner-demo2:before{content:'Loadingâ€¦';position:absolute;top:50%;left:50%;width:24px;height:24px;margin-top:-13px;margin-left:-13px}.spinner-demo2:not(:required):before{content:'';border-radius:50%;border:1px solid #ccc;border-top-color:#03ade0;animation:spinnerDemo2 .6s linear infinite;-webkit-animation:spinnerDemo2 .6s linear infinite} @keyframes spinnerDemo3{to{transform:rotate(180deg)}}@-webkit-keyframes spinnerDemo3{to{-webkit-transform:rotate(180deg)}}.spinner-demo3{min-width:24px;min-height:24px}.spinner-demo3:before{content:'Loadingâ€¦';position:absolute;top:50%;left:50%;width:16px;height:16px;margin-top:-10px;margin-left:-10px}.spinner-demo3:not(:required):before{content:'';border-radius:50%;border:2px solid transparent;border-top-color:#03ade0;border-bottom-color:#03ade0;animation:spinnerDemo3 .8s ease infinite;-webkit-animation:spinnerDemo3 .8s ease infinite} @keyframes spinnerDemo4{to{transform:rotate(360deg)}}@-webkit-keyframes spinnerDemo4{to{-webkit-transform:rotate(360deg)}}.spinner-demo4{min-width:24px;min-height:24px}.spinner-demo4:before{content:'Loadingâ€¦';position:absolute;top:50%;left:50%;width:16px;height:16px;margin-top:-10px;margin-left:-10px}.spinner-demo4:not(:required):before{content:'';border-radius:50%;border-top:2px solid #03ade0;border-right:2px solid transparent;animation:spinnerDemo4 .6s linear infinite;-webkit-animation:spinnerDemo4 .6s linear infinite} @keyframes spinnerDemo5{to{transform:rotate(360deg)}}@-webkit-keyframes spinnerDemo5{to{-webkit-transform:rotate(360deg)}}.spinner-demo5{min-width:24px;min-height:24px}.spinner-demo5:before{content:'Loadingâ€¦';position:absolute;top:50%;left:50%;width:16px;height:16px;margin-top:-10px;margin-left:-10px}.spinner-demo5:not(:required):before{content:'';border-radius:50%;border:1px solid #f6f;border-top-color:#0e0;border-right-color:#0dd;border-bottom-color:#f90;animation:spinnerDemo5 .6s linear infinite;-webkit-animation:spinnerDemo5 .6s linear infinite}
